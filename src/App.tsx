@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NameComponent from './NameComponent';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           rel="noopener noreferrer">
           Learn React
         </a>
+        <NameComponent />
       </header>
     </div>
   );
