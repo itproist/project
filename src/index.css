@@ -9,13 +9,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-.test {
-  color: red;
-  font-size: 50px;
-}
-
-.wrapper {
-  padding: 50px;
-  background-color: blue;
-}

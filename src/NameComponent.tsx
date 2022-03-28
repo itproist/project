@@ -1,10 +1,17 @@
 import React from 'react';
 
-const NameComponent = () => {
+type NameComponentProst = {
+  firstName: string;
+  lastName: string;
+};
+
+const NameComponent = (props: NameComponentProst) => {
+  const { firstName, lastName } = props;
+
   return (
-    <div className="wrapper">
-      <p className="test">Maxim</p>
-      <p className="test">Sklyanin</p>
+    <div>
+      <p>{firstName}</p>
+      <p>{lastName}</p>
     </div>
   );
 };
