@@ -1,15 +1,9 @@
 import React from 'react';
 import './App.css';
-import Cards from './Cards';
+import MainContainer from './containers/MainContainer';
 
 const App = () => {
-  return (
-    <div className="app">
-      <Cards title="Маленькое черное платье" price="₽ 1999" />
-      <Cards title="Маленькое черное платье" price="₽ 2999" />
-      <Cards title="Маленькое черное платье" price="₽ 3999" />
-    </div>
-  );
+  return <MainContainer />;
 };
 
 export default App;
