@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import MainContainer from './containers/MainContainer';
+import RegContainer from './containers/RegContainer';
 
 const App = () => {
-  return <MainContainer />;
+  return <RegContainer />;
 };
 
 export default App;
