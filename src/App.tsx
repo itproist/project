@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
-import RegContainer from './containers/RegContainer';
+import AuthContainer from './containers/AuthContainer';
 
-const App = () => {
-  return <RegContainer />;
-};
+const App = () => <AuthContainer />;
 
 export default App;

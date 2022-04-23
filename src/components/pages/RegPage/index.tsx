@@ -1,14 +1,17 @@
 import React from 'react';
-import PageWrapper from '../../common/PageWrapper';
-import style from './RegPage.module.scss';
+import Input from '../../common/Input';
+import Form from '../FormPage';
 
 const RegPage = () => {
   return (
-    <PageWrapper>
-      <main className={style.main}>
-        <h1>Main Content</h1>
-      </main>
-    </PageWrapper>
+    <>
+      <Form title={'Reg '}>
+        <Input />
+        <Input />
+        <Input />
+        <Input />
+      </Form>
+    </>
   );
 };
 

@@ -1,14 +1,15 @@
 import React from 'react';
-import PageWrapper from '../../common/PageWrapper';
-import style from './AuthPage.module.scss';
+import Input from '../../common/Input';
+import Form from '../FormPage';
 
 const AuthPage = () => {
   return (
-    <PageWrapper>
-      <main className={style.main}>
-        <h1>Auth content</h1>
-      </main>
-    </PageWrapper>
+    <>
+      <Form title={'AUTH '}>
+        <Input />
+        <Input />
+      </Form>
+    </>
   );
 };
 
