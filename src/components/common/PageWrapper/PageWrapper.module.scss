@@ -1,9 +1,8 @@
 .page_wrapper {
-  height: 97.4vh;
   display: grid;
   grid-template-areas:
     'header'
     'main'
     'footer';
-  grid-template-rows: 80px calc(100% - 140px) 80px;
+  grid-template-rows: 100px 500px 100px;
 }
