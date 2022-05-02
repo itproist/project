@@ -5,14 +5,54 @@ import Input from '../../common/Form/Input';
 import PageWrapper from '../../common/PageWrapper';
 
 const RegPage = () => {
+  const [name, setName] = React.useState('');
+  const [email, setEmail] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [repeatPassword, setRepeatPassword] = React.useState('');
+  const handler = () => {
+    console.log(
+      { name, setName },
+      { email, setEmail },
+      { password, setPassword },
+      { repeatPassword, setRepeatPassword }
+    );
+  };
   return (
     <PageWrapper>
       <Form title="Регистрация">
-        {/* <Input title="Name" id="name" placeholder="Введите имя" />
-        <Input title="Email" id="email" placeholder="Введите почту" />
-        <Input title="Password" id="password" placeholder="Введите пароль" />
-        <Input title="Repeat password" id="repeatPassword" placeholder="Повторите пароль" />
-        <Button title="Регистрация" onClick={() => console.log('registration')} /> */}
+        <Input
+          title="Name"
+          id="name"
+          placeholder="Введите имя"
+          value={name}
+          setValue={setName}
+          type="text"
+        />
+        <Input
+          title="Email"
+          id="email"
+          placeholder="Введите почту"
+          value={email}
+          setValue={setEmail}
+          type="text"
+        />
+        <Input
+          title="Password"
+          id="password"
+          placeholder="Введите пароль"
+          value={password}
+          setValue={setPassword}
+          type="password"
+        />
+        <Input
+          title="Repeat password"
+          id="repeatPassword"
+          placeholder="Повторите пароль"
+          value={repeatPassword}
+          setValue={setRepeatPassword}
+          type="password"
+        />
+        <Button title="Регистрация" onClick={handler} />
       </Form>
     </PageWrapper>
   );

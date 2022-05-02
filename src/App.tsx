@@ -1,9 +1,9 @@
 import React from 'react';
-import AuthContainer from './containers/AuthContainer';
+import MainContainer from './containers/MainContainer';
 
 const App = () => (
   <>
-    <AuthContainer />
+    <MainContainer />
   </>
 );
 
