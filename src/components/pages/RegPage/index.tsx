@@ -2,7 +2,6 @@ import React from 'react';
 import Button from '../../common/Button';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';
-import PageWrapper from '../../common/PageWrapper';
 
 const RegPage = () => {
   const [name, setName] = React.useState('');
@@ -17,8 +16,9 @@ const RegPage = () => {
       { repeatPassword, setRepeatPassword }
     );
   };
+
   return (
-    <PageWrapper>
+    <>
       <Form title="Регистрация">
         <Input
           title="Name"
@@ -54,7 +54,7 @@ const RegPage = () => {
         />
         <Button title="Регистрация" onClick={handler} />
       </Form>
-    </PageWrapper>
+    </>
   );
 };
 

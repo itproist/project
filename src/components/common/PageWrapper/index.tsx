@@ -1,13 +1,16 @@
 import React from 'react';
+import { Outlet } from 'react-router-dom';
 import Footer from '../Footer';
 import Header from '../Header';
 import style from './PageWrapper.module.scss';
 
-const PageWrapper: React.FC = ({ children }) => {
+const PageWrapper = () => {
   return (
-    <div className={style.page_wrapper}>
+    <div className={style.page}>
       <Header />
-      {children}
+      <main className={style.page_wrapper}>
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

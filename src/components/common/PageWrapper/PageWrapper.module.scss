@@ -1,8 +1,12 @@
-.page_wrapper {
+.page {
   display: grid;
   grid-template-areas:
     'header '
     'main'
     'footer';
   grid-template-rows: 100px 500px 100px;
+  &_wrapper {
+    background-color: aqua;
+    text-align: center;
+  }
 }

@@ -1,6 +1,21 @@
+@import '../../../assets/main.scss';
+
 .header {
   grid-area: header;
   background-color: crimson;
   color: #ffffff;
   text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  &_main {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_active {
+    color: #ffffff;
+  }
 }
