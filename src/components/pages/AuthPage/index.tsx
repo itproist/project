@@ -8,6 +8,7 @@ const AuthPage = () => {
   const [name, setName] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [hasError, setError] = React.useState(false);
+
   const sumbitHandler = () => {
     if (password.length < 10) {
       setError(false);
