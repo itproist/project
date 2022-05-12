@@ -1,10 +1,12 @@
-import React from 'react';
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setUserNameAction } from '../../../store/actions';
 import Button from '../../common/Button';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';
 
 const AuthPage = () => {
+  const dispatch = useDispatch();
   const [name, setName] = React.useState('');
   const [password, setPassword] = React.useState('');
   const [hasError, setError] = React.useState(false);
@@ -12,7 +14,7 @@ const AuthPage = () => {
   const sumbitHandler = () => {
     if (password.length < 10) {
       setError(false);
-      console.log('Пароль должен быть больше 10 символов');
+      dispatch(setUserNameAction(name));
     } else {
       setError(true);
       console.log({ name, password });
@@ -32,14 +34,13 @@ const AuthPage = () => {
       <Form title="Авторизация">
         <Input title="Name" id="name" placeholder="Введите имя" value={name} setValue={setName} />
         <Input
-          title="Password"
+          title="password"
           id="password"
           placeholder="Введите пароль"
           value={password}
           setValue={setPassword}
           type="password"
         />
-
         {hasError && (
           <div>
             <span>Пароль должен быть больше 10 символов</span>
