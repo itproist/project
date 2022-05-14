@@ -18,8 +18,8 @@
   },
   "plugins": ["react", "@typescript-eslint"],
   "no-explicit-any": "off",
-  "@typescript-eslint/no-explicit-any": "off",
   "rules": {
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }

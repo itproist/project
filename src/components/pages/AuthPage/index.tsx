@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { setUserNameAction } from '../../../store/actions';
+import { setUserNameAction } from '../../../store/auth/actions';
+
 import Button from '../../common/Button';
 import Form from '../../common/Form';
 import Input from '../../common/Form/Input';

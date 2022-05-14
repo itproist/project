@@ -4,9 +4,10 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
-import userInfoReducer from './store/reducer';
+
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
+import userInfoReducer from './store/auth/reducer';
 
 const store = createStore(userInfoReducer, composeWithDevTools(applyMiddleware()));
 
