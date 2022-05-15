@@ -1,5 +1,5 @@
-import { userInfoReducerType } from './types';
+import RootReducerType from '../rootType';
 
-export const GetUserName = (state: userInfoReducerType) => state.name;
+export const GetUserName = (state: RootReducerType) => state.auth.name;
 
 export default GetUserName;

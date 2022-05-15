@@ -1,16 +1,18 @@
 import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import MainPage from '../../components/pages/MainPage';
-import makeRequest from '../../network';
+import { GetUserAction } from '../../store/users/actions';
+import getUsers from '../../store/users/selectors';
 
 const MainContainer = () => {
+  // const dispatch = useDispatch();
   useEffect(() => {
-    const getData = async () => {
-      const data = await makeRequest({ url: '/character' });
-      console.log(data);
-    };
-    getData();
+    // dispatch(GetUserAction());
   }, []);
-  return <MainPage />;
+
+  const userData = useSelector(getUsers);
+  return <MainPage userData={userData} />;
 };
 
 export default MainContainer;

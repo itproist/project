@@ -4,7 +4,11 @@ import { data } from '../../../helpers';
 import style from './MainPage.module.scss';
 import { Link, useLocation } from 'react-router-dom';
 
-const MainPage = () => {
+type MainPagePropsType = {
+  userData: any[];
+};
+
+const MainPage = ({ userData }: MainPagePropsType) => {
   const [listVisible, setListVisible] = useState(false);
   const handler = () => {
     setListVisible((prev) => !prev);
